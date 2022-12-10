@@ -8,7 +8,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("BTN Clicked");
+    console.log({ fullname, email, subject, message });
   };
   return (
     <form
