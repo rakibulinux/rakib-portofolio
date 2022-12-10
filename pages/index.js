@@ -13,6 +13,7 @@ import consulting from "../public/consulting.png";
 import Image from "next/image";
 
 import WorkList from "../components/WorkList";
+import Contact from "../components/Contact";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,7 +28,9 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">Rakibulinux</h1>
+            <h1 className="font-burtons text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-sky-600 text-xl py-2 text-cyan-600 font-medium dark:text-cyan-400 dark:to-sky-600">
+              Rakibulinux
+            </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -38,7 +41,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-cyan-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href="https://drive.google.com/uc?id=1hVgpjczf3D7XtNwG9H3bjMZaMKfkZlg8&export=download"
                 >
                   Resume
                 </a>
@@ -68,7 +71,9 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
+            <h3 className="text-3xl py-1 text-center dark:text-white ">
+              Services I`m Offering
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance system admin and
               developer, I`ve done remote work for
@@ -136,7 +141,9 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h3 className="text-3xl py-1 text-center dark:text-white ">
+              Portofolio
+            </h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, Ive done remote work for
@@ -153,6 +160,7 @@ export default function Home() {
           <WorkList />
         </section>
       </main>
+      <Contact />
     </div>
   );
 }
